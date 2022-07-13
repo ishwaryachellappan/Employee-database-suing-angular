@@ -1,0 +1,17 @@
+<div class="container">
+  <app-create-employee
+    *ngIf="formFlag === 'create'"
+    (createEmployeeEventEmitter)="createEmployee($event)"
+  ></app-create-employee>
+  <app-update-employee
+    *ngIf="formFlag === 'edit'"
+    [currEmp]="currEmp"
+    (updateEmployeeEventEmitter)="updateEmployee($event)"
+    (cancelEditEventEmitter)="canceEdit()"
+  ></app-update-employee>
+  <app-display-employees
+    [employeesList]="employeesList"
+    (editEventEmitter)="editEmployee($event)"
+    (deleteEventEmitter)="deleteEmployee($event)"
+  ></app-display-employees>
+</div>

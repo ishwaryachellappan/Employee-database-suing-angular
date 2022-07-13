@@ -1,0 +1,25 @@
+<div class="container">
+  <div>
+    <h3></h3>
+    <div class="col-md-6">
+      <div>
+        <label>First No:</label>
+        <input type="text" class="form-control" [(ngModel)]="firstNo" />
+      </div>
+      <div>
+        <label>Second No:</label>
+        <input type="text" class="form-control" [(ngModel)]="secondNo" />
+      </div>
+      <div>
+        <label>Result:</label>
+        <input type="text" class="form-control" [(ngModel)]="result" readonly />
+      </div>
+      <div class="text-center my-3">
+        <button class="btn btn-primary mx-3" (click)="add()">Add</button>
+        <button class="btn btn-primary" (click)="sub()">Sub</button>
+        <button class="btn btn-primary mx-3" (click)="mul()">Mul</button>
+        <button class="btn btn-primary" (click)="div()">Div</button>
+      </div>
+    </div>
+  </div>
+</div>

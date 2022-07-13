@@ -1,0 +1,13 @@
+<div>
+  <h3 class="text-center">Demo on Hide & Show using *ngIf directive</h3>
+  <div *ngIf="toggleFlag">
+    <div class="box"></div>
+  </div>
+
+  <div class="text-center my-3">
+    <button (click)="toggler()">
+      <span *ngIf="toggleFlag">Hide</span>
+      <span *ngIf="!toggleFlag">Show</span>
+    </button>
+  </div>
+</div>
